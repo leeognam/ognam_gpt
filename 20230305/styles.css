@@ -1,0 +1,34 @@
+:root {
+  --dcinside-blue: #3b4890;
+}
+
+.bar {
+  background-color: var(--dcinside-blue);
+}
+
+.parent {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+
+.parent div {
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+}
+.parent div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mini::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  margin-right: -10px;
+  height: 15px;
+  background-color: gray;
+  margin-left: 10px;
+  vertical-align: -3px;
+}
